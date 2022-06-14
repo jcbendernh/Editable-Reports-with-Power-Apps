@@ -10,4 +10,10 @@ Overall, I think this is a really great solution once you understand how to impl
 
 For this example, I am using the SalesLT.Products table from the AdventureWorksLT database.
 
+##Setting up the Report.
+
+1. The first step is to ensure that you setup a DirectQuery to your data source. Below is a screenshot of my connection.
+![picture alt](/images/Direct%20Query%20Connection.gif)
+
+
 

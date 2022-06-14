@@ -22,3 +22,25 @@ For this example, I am using the SalesLT.Products table from the AdventureWorksL
 
 ## Adding and Configuring the Canvas App.
 
+3. Next we will need to add the Canvas App to the Power BI Report, to do so click the Insert Tab | Power Apps Button.
+
+![picture alt](/images/Insert%20Power%20Apps.gif)
+
+4. Once the Power Apps control is added to the canvas, please add the unique value / primary key in the PowerApps Data field and click the Create New button and then click accept any popups to get you to the Power Apps Studio in the browser.
+
+![picture alt](/images/PowerApps%20Data%20Value.gif)
+
+5. Once in the Power Apps studio, it will create the form for you with a Gallery control. This is where the crux of the problem lies, you cannot use the Gallery to modify fields and submit their changes.  You must use a Form control and then embed your fields in the form along with a submit button.  To do so, perform the following steps...
+
+6. Resize the gallery control on your Screen1 in the Power App to only take up the heading of the screen.  I resized it to the Height of 129 pixels.  
+
+![picture alt](/images/Gallery%20Heaight.gif)
+
+
+
+
+
+
+
+
+

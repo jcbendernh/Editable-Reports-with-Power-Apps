@@ -16,5 +16,9 @@ For this example, I am using the SalesLT.Products table from the AdventureWorksL
 
 ![picture alt](/images/Direct%20Query%20Connection.gif)
 
+2. Next I created my table and ensured to add the unique value / primary key.  In this case it is ProductNumber.
+
+![picture alt](/images/Power%20BI%20Table.gif)
+
 
 

@@ -14,41 +14,41 @@ For this example, I am using the SalesLT.Products table from the AdventureWorksL
 
 1. The first step is to ensure that you setup a DirectQuery to your data source. Below is a screenshot of my connection.
 
-![picture alt](/images/Direct%20Query%20Connection.gif)
+    ![picture alt](/images/Direct%20Query%20Connection.gif)
 
 2. Next I created my table and ensured to add the unique value / primary key.  In this case it is ProductNumber.
 
-![picture alt](/images/Power%20BI%20Table.gif)
+    ![picture alt](/images/Power%20BI%20Table.gif)
 
 ## Adding and Configuring the Canvas App.
 
 3. Next we will need to add the Canvas App to the Power BI Report, to do so click the Insert Tab | Power Apps Button.
 
-![picture alt](/images/Insert%20Power%20Apps.gif)
+    ![picture alt](/images/Insert%20Power%20Apps.gif)
 
 4. Once the Power Apps control is added to the canvas, please add the unique value / primary key in the PowerApps Data field and click the Create New button and then click accept any popups to get you to the Power Apps Studio in the browser.
 
-![picture alt](/images/PowerApps%20Data%20Value.gif)
+    ![picture alt](/images/PowerApps%20Data%20Value.gif)
 
 5. Once in the Power Apps studio, it will create the form for you with a Gallery control. This is where the crux of the problem lies, you cannot use the Gallery to modify fields and submit their changes.  You must use a Form control and then embed your fields in the form along with a submit button.  To do so, perform the following steps...
 
 6. Resize the gallery control on your Screen1 in the Power App to only take up the heading of the screen.  I resized it to the Height of 129 pixels.  
 
-![picture alt](/images/Gallery%20Heaight.gif)
+    ![picture alt](/images/Gallery%20Heaight.gif)
 
 7. Next we will need to add a Power App connection to our data source so that the Power App can update the fields as necessary.  It is important to understand this connection is independent of the Power BI datasource you created earlier.   Later on will tie the two together via a Power BI specific command.  Expand the hamburger in the upper left and click on Data and the Add data button.
 
-![picture alt](/images/Power%20Apps%20Add%20Data.gif)
+    ![picture alt](/images/Power%20Apps%20Add%20Data.gif)
 
 8.  Under select a data source, expand Connectors and select SQL Server.  Next click Add a Connection to input your SQL Server connection information including server and database names and click Connect 
 
-![picture alt](/images/Choose%20a%20dataset.gif)
+    ![picture alt](/images/Choose%20a%20dataset.gif)
 
 Notice that the SQL server connection requires a Power Apps premium license.  Any connector that has a diamond next to it will require a Power Apps premium license.  For more on this topic see [Connector reference overview](https://docs.microsoft.com/en-us/connectors/connector-reference/).
 
 9. On the next screen, select your table and click Connect.  When finished you should see your connection under Data.
 
-![picture alt](/images/New%20Data%20Connection.gif)
+    ![picture alt](/images/New%20Data%20Connection.gif)
 
 10. Next insert and Edit Form on Screen1 of the Canvas app and place it so it slightly overlaps the gallery.  For positioning, I gave it a Y value of 58 and connected the Data Source to my new Data Source.
 

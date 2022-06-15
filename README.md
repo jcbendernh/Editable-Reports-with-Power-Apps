@@ -55,7 +55,7 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 11. Next click Edit Fields to add the fields you would like to utilize on your form.
 
 12. Next we need to tie the Gallery value to the form.  To do so, lets modify the following values on the Advanced Tab of the Gallery.
-    1. OnSelect  :Navigate(Form1, ScreenTransition.None): 
+    OnSelect  `Navigate(Form1, ScreenTransition.None)`
 
 
 

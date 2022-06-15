@@ -70,13 +70,11 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 14.  Last of all, we need to add a submit button and give it a command.  To do so, make sure FOrm1 is highlighed and goto the toolbar and click Insert | Button.  For the button properties, set the following on the advanced tab
     OnSelect  `SubmitForm(Form1);PowerBIIntegration.Refresh()` <br>
     Text  `"Submit"`  <br>
-
     ![picture alt](/images/Submit%20Button.gif)
 
 15.  Now Save your Power App to the The Cloud and close out of the Power App studio.
 
 16.  If you Power App does not show up in the Power BI Canvas, delete the Power App control, repeat step 4 above but this time select Choose App and select your Power App that you just created.  It should now show in the report.  
-
     ![picture alt](/images/Finished%20Report.gif)
 
 However it may not automatically refresh the report in the desktop when you click Submit, you may have to manually refresh in the desktop.  Once the report is published to the Power BI Web Service.  You should see the automatic refresh.

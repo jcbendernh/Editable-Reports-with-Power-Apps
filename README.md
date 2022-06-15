@@ -54,20 +54,20 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 
 11. Next click Edit Fields to add the fields you would like to utilize on your form.
 
-12. Next we need to tie the Gallery1 control to the Form1 control.  To do so, lets modify the following values on the Advanced Tab of Gallery1. <br>
+12. Next we need to tie the Gallery1 control to the Form1 control.  To do so, lets modify the following values on the advanced tab of Gallery1. <br>
     OnSelect  `Navigate(Form1, ScreenTransition.None)` <br>
     Items  `LookUp(<data source>,<data source unique value>=First(PowerBIIntegration.Data).<power BI unique value>)`<br>
     For instance I used `LookUp('SalesLT.Product',ProductNumber=First(PowerBIIntegration.Data).ProductNumber)`<br>
 
     ![picture alt](/images/Gallery%20Advanced%20Values.gif)
 
-13. Next modify the following values on the Advanced Tab of Form1.  <br>
+13. Next modify the following value on the advanced tab of Form1.  <br>
     Item  `Gallery1.Selected` <br>
     Once this is set, you should start to see values in your fields that correspond to the record highlighted.<br>
 
     ![picture alt](/images/Form%20Advanced%20Values.gif)
 
-14.  Last of all, we need to add a submit button and give it a command.  To do so, make sure FOrm1 is highlighed and goto the toolbar and click Insert | Button.  For the button properties, set the following on the advanced tab <br>
+14.  Last of all, we need to add a submit button and give it a command.  To do so, go to the toolbar and click Insert | Button.  For the button properties, set the following on the advanced tab <br>
     OnSelect  `SubmitForm(Form1);PowerBIIntegration.Refresh()` <br>
     Text  `"Submit"`  <br>
     ![picture alt](/images/Submit%20Button.gif)
@@ -77,7 +77,7 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 16.  If you Power App does not show up in the Power BI Canvas, delete the Power App control, repeat step 4 above but this time select Choose App and select your Power App that you just created.  It should now show in the report.  
     ![picture alt](/images/Finished%20Report.gif)
 
-However it may not automatically refresh the report in the desktop when you click Submit, you may have to manually refresh in the desktop.  Once the report is published to the Power BI Web Service.  You should see the automatic refresh.
+However it may not automatically refresh the report in the Power Bi Desktop when you click Submit, you may have to manually refresh in the desktop.  Once the report is published to the Power BI Web Service.  Clicking the Submit buttom will automatically refresh the report.
 
 
 

@@ -50,7 +50,7 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 
     ![picture alt](/images/New%20Data%20Connection.gif)
 
-10. Next insert and Edit Form on Screen1 of the Canvas app and place it so it slightly overlaps the gallery.  For positioning, I gave it a Y value of 58 and connected the Data Source to my new Data Source.
+10. Next insert an Edit Form on Screen1 of the Canvas app and place it so it slightly overlaps the gallery.  For positioning, I gave it a Y value of 58 and connected the Data Source to my new Data Source.
 
 11. Next click Edit Fields to add the fields you would like to utilize on your form.
 

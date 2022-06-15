@@ -54,8 +54,19 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 
 11. Next click Edit Fields to add the fields you would like to utilize on your form.
 
-12. Next we need to tie the Gallery value to the form.  To do so, lets modify the following values on the Advanced Tab of the Gallery.
-    OnSelect  `Navigate(Form1, ScreenTransition.None)`
+12. Next we need to tie the Gallery1 value to the Form1 value.  To do so, lets modify the following values on the Advanced Tab of Gallery1. <br>
+    OnSelect  `Navigate(Form1, ScreenTransition.None)` <br>
+    Items  `LookUp('<data source>',<data source unique value>=First(PowerBIIntegration.Data).<power BI unique value>)'<br>
+    For instance I used `LookUp('SalesLT.Product',ProductNumber=First(PowerBIIntegration.Data).ProductNumber)`<br>
+
+    ![picture alt](/images/Gallery%20Advanced%20Values.gif)
+
+13. Next modify the following values on the Advanced Tab of Form1.  <br>
+    Item  `Gallery1.Selected` <br>
+    Once this is set, you should start to see values in your fields that correspond to the record highlighted.<br>
+
+    ![picture alt](/images/Form%20Advanced%20Values.gif)
+
 
 
 

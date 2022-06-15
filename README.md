@@ -36,7 +36,7 @@ For this example, I am using the SalesLT.Products table from the AdventureWorksL
 
     ![picture alt](/images/Gallery%20Heaight.gif)
 
-7. Next we will need to add a Power App connection to our data source so that the Power App can update the fields as necessary.  It is important to understand this connection is independent of the Power BI datasource you created earlier.   Later on will tie the two together via a Power BI specific command.  Expand the hamburger in the upper left and click on Data and the Add data button.
+7. Next we will need to add a Power App connection to our data source so that the Power App can update the fields as necessary.  It is important to understand this connection is independent of the Power BI datasource you created earlier.   Later on we will tie the two together via a Power BI specific command.  Expand the hamburger in the upper left and click on Data and the Add data button.
 
     ![picture alt](/images/Power%20Apps%20Add%20Data.gif)
 

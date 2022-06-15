@@ -54,7 +54,7 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 
 11. Next click Edit Fields to add the fields you would like to utilize on your form.
 
-12. Next we need to tie the Gallery1 value to the Form1 value.  To do so, lets modify the following values on the Advanced Tab of Gallery1. <br>
+12. Next we need to tie the Gallery1 control to the Form1 control.  To do so, lets modify the following values on the Advanced Tab of Gallery1. <br>
     OnSelect  `Navigate(Form1, ScreenTransition.None)` <br>
     Items  `LookUp(<data source>,<data source unique value>=First(PowerBIIntegration.Data).<power BI unique value>)`<br>
     For instance I used `LookUp('SalesLT.Product',ProductNumber=First(PowerBIIntegration.Data).ProductNumber)`<br>

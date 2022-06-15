@@ -71,11 +71,15 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
     OnSelect  `SubmitForm(Form1);PowerBIIntegration.Refresh()` <br>
     Text  `"Submit"`<br>
 
+    ![picture alt](/images/Form%20Advanced%20Values.gif)
+
     ![picture alt](/images/Submit%20Button.gif)
 
 15.  Now Save your Power App to the The Cloud and close out of the Power App studio.
 
 16.  If you Power App does not show up in the Power BI Canvas, delete the Power App control, repeat step 4 above but this time select Choose App and select your Power App that you just created.  It should now show in the report.  
+
+    ![picture alt](/images/Form%20Advanced%20Values.gif)
 
     ![picture alt](/images/Finished%20Report.gif)
 

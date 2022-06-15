@@ -69,7 +69,7 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 
 14.  Last of all, we need to add a submit button and give it a command.  To do so, make sure FOrm1 is highlighed and goto the toolbar and click Insert | Button.  For the button properties, set the following on the advanced tab
     OnSelect  `SubmitForm(Form1);PowerBIIntegration.Refresh()` <br>
-    Text  `"Submit"`<br>
+    Text  `"Submit"`  <br>
 
     ![picture alt](/images/Form%20Advanced%20Values.gif)
 

@@ -30,7 +30,7 @@ For this example, I am using the SalesLT.Products table from the AdventureWorksL
 
     ![picture alt](/images/PowerApps%20Data%20Value.gif)
 
-5. Once in the Power Apps studio, it will create the form for you with a Gallery control. If you are not a Power Apps expert, this is where the crux of the problem lies, you would need to use a ForAll statement to update the SQL source and that can be rather advanced.  Thus, to keep it simple for these instructions, we will utilize a Form control and then embed the fields in the form along with a submit button to get our changes to post to the database.  To do so, I performed the following steps.
+5. Once in the Power Apps studio, it will create the form for you with a Gallery control. If you are not a Power Apps expert, this is where the crux of the problem lies, if you add your fields directly to the Gallery, you would need to use a ForAll statement to update the SQL source and that can be rather advanced.  Thus, to keep it simple for these instructions, we will utilize a Form control and then embed the fields in the form along with a submit button to get our changes to post to the database.  To do so, I performed the following steps.
 
 6. Resize the gallery control on your Screen1 in the Power App to only take up the heading of the screen.  I resized it to the Height of 129 pixels.  
 

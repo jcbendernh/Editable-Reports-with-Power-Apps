@@ -1,5 +1,5 @@
 # Editable-Reports-with-Power-Apps
-This is an instructional repository of how to enable the ability edit data in Power BI report using Power Apps.  
+This is an instructional repository of how to enable the ability to edit data in Power BI report using Power Apps.  
 
 ## Introduction
 There is a new feature in Power BI where I can add a Power App to the Power BI report canvas and if I follow specific steps, I can use the Power App within the report to edit the content on the specific record of the report that is highlighted. 

@@ -2,11 +2,11 @@
 This is an instructional repository of how to enable the ability to edit data in Power BI report using Power Apps.  
 
 ## Introduction
-There is a new feature in Power BI where I can add a Power App to the Power BI report canvas and if I follow specific steps, I can use the Power App within the report to edit the content on the specific record of the report that is highlighted. 
+There is a new feature in Power BI where I can add a Power App to the report canvas and if I follow specific steps, I can use the Power App within the report to edit the content on the specific record of the report that is highlighted. 
 
 The published instructions are found at [Power Apps visual for Power BI](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/powerapps-custom-visual).   However, I found that they are not complete / accurate and assume a certain level of skills with Power Apps.  Thus, I created this repository to walk through the steps I used to get it to work as expected.
 
-Overall, I think this is a really great solution once you understand how to implement it.  Below are the steps I have taken to build out a working example of querying an Azure SQL database via Direct Query in Power BI and then using the Power App to update the data in the Azure SQL Database and then perform a refresh on the report data.
+Once you understand how to implement it, I think this is a really great solution .  Below are the steps I have taken to build out a working example of querying an Azure SQL database via Direct Query in Power BI and then using the Power App to update the data in the Azure SQL Database and then perform a real-time report refresh.
 
 For this example, I am using the SalesLT.Products table from the AdventureWorksLT Azure SQL database.
 
@@ -30,7 +30,7 @@ For this example, I am using the SalesLT.Products table from the AdventureWorksL
 
     ![picture alt](/images/PowerApps%20Data%20Value.gif)
 
-5. Once in the Power Apps studio, it will create the form for you with a Gallery control. This is where the crux of the problem lies, you cannot use the Gallery to modify fields and submit their changes.  From my experience, you must use a Form control and then embed your fields in the form along with a submit button to get your changes to post to the database.  To do so, I performed the following steps.
+5. Once in the Power Apps studio, it will create the form for you with a Gallery control. If you are not a Power Apps expert, this is where the crux of the problem lies, you would need to use a ForAll statement to update the SQL source and that can be rather advanced.  Thus, to keep it simple for these instructions, we will utilize a Form control and then embed the fields in the form along with a submit button to get our changes to post to the database.  To do so, I performed the following steps.
 
 6. Resize the gallery control on your Screen1 in the Power App to only take up the heading of the screen.  I resized it to the Height of 129 pixels.  
 
@@ -57,7 +57,7 @@ Notice that the SQL server connection requires a Power Apps premium license.  An
 12. Next we need to tie the Gallery1 control to the Form1 control.  To do so, lets modify the following values on the advanced tab of Gallery1. <br>
     - OnSelect  `Navigate(Form1, ScreenTransition.None)` <br>
     - Items  `LookUp(<data source>,<data source unique value>=First(PowerBIIntegration.Data).<power BI unique value>)`<br>
-    <i>For instance I used</i> `LookUp('SalesLT.Product',ProductNumber=First(PowerBIIntegration.Data).ProductNumber)`<br>
+    <i>For example, I used</i> `LookUp('SalesLT.Product',ProductNumber=First(PowerBIIntegration.Data).ProductNumber)`<br>
 
     ![picture alt](/images/Gallery%20Advanced%20Values.gif)
 
